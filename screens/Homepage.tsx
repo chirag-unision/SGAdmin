@@ -36,7 +36,7 @@ export default function Homepage({}: Props) {
                     />
                     <View>
                         <Text style={styles.title}>{item.title}</Text>
-                        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between', maxHeight: 30, paddingHorizontal: 10}}>
+                        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between', maxHeight: 30, paddingHorizontal: 10, minWidth: 250}}>
                             <Text style={styles.textStyle1}>{item.date}</Text>
                             <Text style={styles.textStyle1}>{item.time}</Text>
                         </View>
@@ -69,7 +69,7 @@ const styles= StyleSheet.create({
         alignItems: 'center'
     },
     image:{
-        width: 300,
+        width: 320,
         height: 180,
         borderRadius: 10
     },
